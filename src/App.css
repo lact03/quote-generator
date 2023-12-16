@@ -1,55 +1,75 @@
 @import url("https://fonts.googleapis.com/css2?family=Dancing+Script&family=Lobster&display=swap");
 
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+}
 .App {
-    background: #333;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    min-height: 100dvh;
-    flex-direction: column;
+  background: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100dvh;
+  flex-direction: column;
 }
 
 .quote {
-    background: url(./assets/bg.jpg);
-    background-size: cover;
-    background-position: bottom;
-    height: 320px;
-    width: 450px;
-    margin-bottom: 2rem;
-    border-radius: 10px;
-    padding: 50px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  background: url(./assets/bg.jpg);
+  background-size: cover;
+  background-position: bottom;
+  height: 320px;
+  width: 450px;
+
+  margin-bottom: 2rem;
+  border-radius: 10px;
+  padding: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 
 .quote h2 {
-    font-size: 2em;
-    font-family: "Lobster", cursive;
+  font-size: 2em;
+  font-family: "Lobster", cursive;
 }
 
 .quote small {
-    font-size: 1.5em;
-    font-family: "Dancing Script", cursive;
+  font-size: 1.5em;
+  font-family: "Dancing Script", cursive;
 }
 
 .btn {
-    display: block;
-    border: none;
-    background: transparent;
-    padding: 10px 15px;
-    color: #fff;
-    font-size: 20px;
-    border-radius: 5px;
-    cursor: pointer;
-    outline: none;
-    transition: background 1s;
-    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2),
-        0 6px 20px 0 rgba(0, 0, 0, 0.19);
+  display: block;
+  border: none;
+  background: transparent;
+  padding: 10px 15px;
+  color: #fff;
+  font-size: 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  outline: none;
+  transition: background 1s;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
 }
 .btn:hover {
-    background: #da7d7f;
+  background: #da7d7f;
+}
+
+@media (max-width: 767px) {
+  .quote {
+    width: 400px;
+    padding: 20px;
+  }
+  .quote h2 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 425px) {
+  .quote {
+    width: 300px;
+  }
 }
